@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Nesting Grid</title>
+</head>
+
+<body>
+
+    <div class="albums">
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=1">
+            <div>
+                <h2>Album Title</h2>
+                <p class="album__artist">Artist Name</p>
+                <p class="album__desc">Album description.</p>
+            </div>
+        </div>
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=2">
+            <div>
+                <h2>Album Title</h2>
+                <p class="album__artist">Artist Name</p>
+                <p class="album__desc">short.</p>
+            </div>
+        </div>
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=3">
+            <div>
+                <h2>Album Title</h2>
+                <p class="album__artist">Artist Name</p>
+                <p class="album__desc">Album description.</p>
+            </div>
+        </div>
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=4">
+            <div>
+                <h2>Album Title</h2>
+                <p class="album__artist">Artist Name</p>
+                <p class="album__desc">Album description.</p>
+            </div>
+        </div>
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=5">
+            <div>
+                <h2>Album Title</h2>
+                <p class="album__artist">Artist Name</p>
+                <p class="album__desc">Album description.</p>
+            </div>
+        </div>
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=6">
+            <div>
+                <h2>Album Title</h2>
+                <p class="album__artist">Artist Name</p>
+                <p class="album__desc">Album description.</p>
+            </div>
+        </div>
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=7">
+            <div>
+                <h2>Album Title</h2>
+                <p class="album__artist">Artist Name</p>
+                <p class="album__desc">Album description.</p>
+            </div>
+        </div>
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=8">
+            <div>
+                <h2>Album Title</h2>
+                <p class="album__artist">Artist Name</p>
+                <p class="album__desc">Album description.</p>
+            </div>
+        </div>
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=9">
+            <div>
+                <h>Album Title</h2>
+                    <p class="album__artist">Artist Name</p>
+                    <p class="album__desc">Album description.</p>
+            </div>
+        </div>
+        <div class="album">
+            <img class="album_picture" src="https://source.unsplash.com/random/300x300?v=10">
+            <div>
+                <h2>Album Title</h2>
+                <p class="album__artist">Artist Name</p>
+                <p class="album__desc">Album description.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <style>
+        .albums {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .album {
+            background-color: rgba(255, 255, 255, 0.247);
+            padding: 3%;
+            /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 150px 1fr;
+            align-items: center;
+            color: white;
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .album_picture {
+            width: 100%;
+        }
+    </style>
+</body>
+
+</html>
